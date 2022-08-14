@@ -2,50 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=no" > <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./desktop.css" media="(min-width: 1024px)">
   
   <title>Frontend Mentor | Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
-
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
+  <section class="background-section">
+    <div class="card-figures-content">
+      <figure>
+        <img class="card-back" src="./images/bg-card-back.png" alt="card back">           
+      </figure>
+      <div class="card-back__num">000</div> 
+      <figure>
+        <img class="card-front" src="./images/bg-card-front.png" alt="card front">      
+      </figure>
+      <img class="card-logo" src="./images/card-logo.svg" alt="card logo">
+        <span class="card-logo__number">0000 0000 0000 0000</span>
+        <span class="card-logo__name">Jane Appleseed</span>
+      <span class="card-logo__exp">00/00</span>
+    </div>    
+  </section>
+  <section class="content-section">
+    <form class="card-form">
+      <label class="card-data-label" for="name">Cardholder Name</label>
+      <input id="name" type="text" placeholder="e.g. Jane Appleseed">
+      <label class="card-data-label" for="cardNumber">Card Number</label>
+      <input id="cardNumber" type="number" placeholder="e.g. 1234 5678 9123 0000">
+      <div class="card-data-content-general">
+        <span class="card-data-label">Exp. Date (MM/YY)</span>
+        <span class="card-data-label">CVC</span>
+        <div class="content-number-card">
+          <input class="numbers-inputs" type="number" placeholder="MM">
+          <input class="numbers-inputs" type="number" placeholder="YY">
+          <input class="numbers-inputs" type="number" placeholder="e.g. 123">
+        </div>        
+      </div>      
+      <button class="btn" type="button">Confirm</button>
+    </form>
+  </section>
+  <!--<section class="ocultar complete-section ">
+      <figure>
+        <img src="./images/icon-complete.svg" alt="complete">
+      </figure>
+      <p class="thank-you">Thank you!</p>
+      <p class="added-card">We've added your card details</p>
+      <button class="btn">Continue</button>
+  </section>-->
 
   <!-- Completed state start -->
 
-  Thank you!
-  We've added your card details
-  Continue
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
+  
+  <script src="main.js"></script>
 </body>
 </html>

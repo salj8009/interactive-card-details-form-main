@@ -1,0 +1,64 @@
+body {
+    display: flex;
+}
+.background-section {
+    max-width: 30%;
+    height: 100vh;
+}
+
+.content-section {
+    margin-left: 250px;
+    /*margin-right: 50px;*/
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
+}
+form {
+    width: 35vw;
+}
+
+.numbers-inputs {
+    width: 85px;
+}
+.numbers-inputs:last-child {
+    width: 170px;
+}
+.card-back {
+    right: -205px;
+    top: 392px;
+    width: auto;
+}
+.card-back__num {
+    bottom: -267px;
+    right: -150px;
+    letter-spacing: .1rem;
+    font-size: 1.6rem;
+}
+.card-front {
+    width: auto;
+    left: calc(100% - 70%);
+
+}
+.card-logo {
+    width: auto;
+    left: 140px;
+    top: 140px;
+}
+.card-logo__number {
+    font-size: 3rem;
+    left: 142px;
+    bottom: -253px;
+    position: relative;
+    color: var(--White);
+}
+.card-logo__exp {
+    bottom: -80px;
+    left: 472px;
+    font-size: 1.5rem;
+}
+.card-logo__name {
+    bottom: -80px;
+    left: 140px;
+    font-size: 1.5rem;
+}
