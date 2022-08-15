@@ -30,7 +30,7 @@ form {
     width: auto;
 }
 .card-back__num {
-    bottom: -267px;
+    top: 497px;
     right: -150px;
     letter-spacing: .1rem;
     font-size: 1.6rem;
