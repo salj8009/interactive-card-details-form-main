@@ -36,7 +36,7 @@ html {
 .card-back__num {
     color: var(--White);
     position: absolute;
-    bottom: 132px;
+    top: 100px;
     right: 51px;
 }
 
@@ -54,7 +54,7 @@ html {
     width: 64px;
 }
 .card-logo__number {
-    bottom: 11px;
+    top: 206px;
     position: absolute;
     left: 38px;
     color: var(--White);
@@ -63,7 +63,7 @@ html {
 }
 .card-logo__name {
     color: var(--White);
-    bottom: -19px;
+    top: 250px;
     position: absolute;
     left: 37px;
     text-transform: uppercase;
@@ -71,7 +71,7 @@ html {
 }
 .card-logo__exp {
     color: var(--White);
-    bottom: -19px;
+    top: 250px;
     position: absolute;
     left: 254px;
 }
