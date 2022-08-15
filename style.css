@@ -95,6 +95,7 @@ form {
     flex-direction: column; 
     max-width: 500px;
     margin: auto;
+    position: relative;
 }
 .card-data-content-general {
     margin-top: 10px;
@@ -111,6 +112,7 @@ form {
 }
 #name, #cardNumber {
     margin-bottom: 30px;
+   
 }
 input {
     padding: 14px;
@@ -137,6 +139,7 @@ input:focus {
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
+    position: relative;
 }
 .numbers-inputs {
     width: 71px;
@@ -158,7 +161,8 @@ input[type=number] { -moz-appearance:textfield;
     color: var(--RedInputErrors);
     position: absolute;
     font-weight: bold;
-    bottom: 142px;
+    top: 225px;
+    /*bottom: 142px;*/
 }
 
 .btn {
@@ -195,7 +199,7 @@ input[type=number] { -moz-appearance:textfield;
 .errorsdate {
     color: var(--RedInputErrors);
     position: absolute;
-    bottom: 24px;
+    top: 61px;
     font-weight: bold;
 }
 .errorInputRed {
