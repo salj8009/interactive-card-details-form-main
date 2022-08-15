@@ -36,7 +36,7 @@ html {
 .card-back__num {
     color: var(--White);
     position: absolute;
-    bottom: 105px;
+    bottom: 132px;
     right: 51px;
 }
 
@@ -87,7 +87,8 @@ html {
     margin-top: 120px;
     margin-left: 20px;
     margin-right: 20px;
-    display: block;    
+    display: block; 
+    text-align: center;   
 }
 form {
     display: flex;
@@ -106,7 +107,10 @@ form {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1.5rem;
-    letter-spacing: .1rem;
+    letter-spacing: .1rem;    
+}
+#name, #cardNumber {
+    margin-bottom: 30px;
 }
 input {
     padding: 14px;
@@ -114,6 +118,8 @@ input {
     border-radius: 5px;
     font-size: 1.8rem;
     letter-spacing: .1rem;
+    color: var(--VeryDarkViolet);
+    font-weight: bold;
 }
 input::placeholder {
     color: var(--LightGrayishViolet);
@@ -123,7 +129,7 @@ input::placeholder {
     font-size: 1.8rem;
 }
 input:focus {
-    border:  solid green;
+    border: 0.2rem solid var(--LightGrayishViolet);
 }
 .content-number-card {
     display: flex;
@@ -138,6 +144,23 @@ input:focus {
 .numbers-inputs:last-child {
     width: 139px;
 }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; 
+}
+
+.errors{
+    color: var(--RedInputErrors);
+    position: absolute;
+    font-weight: bold;
+    bottom: 142px;
+}
+
 .btn {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -168,6 +191,15 @@ input:focus {
     font-size: 2.2rem;
     color: var(--LightGrayishViolet);
     margin-bottom: 50px;
+}
+.errorsdate {
+    color: var(--RedInputErrors);
+    position: absolute;
+    bottom: 24px;
+    font-weight: bold;
+}
+.errorInputRed {
+    border: 0.2rem solid var(--RedInputErrors);
 }
 /*Mostrar Ocultar*/
 .mostrar {

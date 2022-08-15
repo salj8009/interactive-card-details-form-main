@@ -34,26 +34,30 @@
       <label class="card-data-label" for="name">Cardholder Name</label>
       <input id="name" type="text" placeholder="e.g. Jane Appleseed">
       <label class="card-data-label" for="cardNumber">Card Number</label>
-      <input id="cardNumber" type="number" placeholder="e.g. 1234 5678 9123 0000">
+      <input id="cardNumber" type="number"  placeholder="e.g. 1234 5678 9123 0000">
+      <span class="errors"></span>
       <div class="card-data-content-general">
-        <span class="card-data-label">Exp. Date (MM/YY)</span>
+        <span class="card-data-label">Exp. Date (MM/YY)</span>        
         <span class="card-data-label">CVC</span>
         <div class="content-number-card">
-          <input class="numbers-inputs" type="number" placeholder="MM">
-          <input class="numbers-inputs" type="number" placeholder="YY">
-          <input class="numbers-inputs" type="number" placeholder="e.g. 123">
+          <input class="numbers-inputs mm" type="number" placeholder="MM">          
+          <input class="numbers-inputs yy" type="number" placeholder="YY">
+          <input class="numbers-inputs cvc" type="number" placeholder="e.g. 123">
+          <span class="errorsdate"></span>
         </div>        
       </div>      
       <button class="btn" type="button">Confirm</button>
     </form>
   </section>
   <!--<section class="ocultar complete-section ">
+    <div>
       <figure>
         <img src="./images/icon-complete.svg" alt="complete">
       </figure>
       <p class="thank-you">Thank you!</p>
       <p class="added-card">We've added your card details</p>
       <button class="btn">Continue</button>
+    </div>      
   </section>-->
 
   <!-- Completed state start -->
